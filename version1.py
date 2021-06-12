@@ -132,7 +132,7 @@ class MyApp(QMainWindow):
             pyautogui.click(*next_page)
             rest_of_percent += 40//page
             self.pbar.setValue(60+rest_of_percent)
-            time.sleep(0.8)
+            time.sleep(1.5)
         self.pbar.setValue(100)
         msg = "이미지 캡쳐 완료. PDF메뉴를 눌러 PDF로 변환하세요!"
         self.status(msg)
